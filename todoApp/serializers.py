@@ -115,13 +115,5 @@ class TodoGroupDocSerializer(serializers.Serializer):
     group_description=serializers.CharField()
     user=serializers.IntegerField()
     
-class TasksDocSerializer(serializers.Serializer):
-    title=serializers.CharField()
-    description=serializers.CharField()
-    due_date=serializers.DateField()
-    assignee=serializers.IntegerField()
-    files=serializers.FileField()
-    created_by=serializers.IntegerField()
-    completion_status=serializers.CharField()
-    todo_group=serializers.IntegerField()
+
         
